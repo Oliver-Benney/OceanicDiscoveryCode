@@ -41,6 +41,10 @@ function modelLoaded() {
 function countPeople() {
   peopleCount = poses.length;
 
+  if(peopleCount > 4){
+    peopleCount = 4;
+  }
+
   // Update Firebase Firestore with the new count
   countRef.set({
     count: peopleCount
