@@ -15,7 +15,7 @@ let poseNet;
 let poses = [];
 let peopleCount = 0;
 let lastCountTime = 0;
-const countInterval = 15000; // 15 seconds in milliseconds
+const countInterval = 10000; // 10 seconds in milliseconds
 
 function setup() {
   createCanvas(640, 480);
